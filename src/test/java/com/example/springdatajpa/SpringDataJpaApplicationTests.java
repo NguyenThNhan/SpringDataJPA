@@ -1,7 +1,11 @@
 package com.example.springdatajpa;
 
+import com.example.entity.Student;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import java.util.List;
 
 @SpringBootTest
 class SpringDataJpaApplicationTests {
@@ -9,5 +13,6 @@ class SpringDataJpaApplicationTests {
     @Test
     void contextLoads() {
     }
+
 
 }
