@@ -1,4 +1,4 @@
-package com.example.entity;
+package com.example.springdatajpa.entity;
 
 import lombok.*;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
