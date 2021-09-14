@@ -1,9 +1,11 @@
-package com.example.entity;
+package com.example.springdatajpa.entity;
 
 import lombok.*;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 @Data
