@@ -13,18 +13,12 @@ import java.util.List;
 
 @Repository
 public interface StudentRepository extends JpaRepository<Student,Long> {
-    @Query(value = "SELECT * FROM student WHERE name = 'studentA'",
-            nativeQuery = true)
+    @Query(value = "SELECT s FROM Student s WHERE s.name = 'studentA'")
     List<Student> findStudentByName();
 
     @Transactional
     @Modifying
-    @Query(value = "DELETE FROM student WHERE id = :id", nativeQuery = true)
+    @Query(value = "DELETE FROM Student WHERE id = :id")
     void deleteStudent(long id);
-
-    @Transactional
-    @Modifying
-    @Query(value = "UPDATE Student SET email= ?1 WHERE id = ?2", nativeQuery = true)
-    void updateStudent(String email, long id);
 
 }

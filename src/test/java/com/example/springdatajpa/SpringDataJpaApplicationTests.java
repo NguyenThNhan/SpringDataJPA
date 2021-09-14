@@ -22,10 +22,7 @@ class SpringDataJpaApplicationTests {
     void findStudentByName(){
         List<Student> list = studentRepository.findStudentByName();
     }
-    @Test
-    void updateStudent(){
-        studentRepository.updateStudent("email@gmail.com",1l);
-    }
+
     @Test
     void deleteStudent(){
         studentRepository.deleteStudent(1l);
